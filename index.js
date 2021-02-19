@@ -1,3 +1,4 @@
+var color = document.currentScript.getAttribute('color');
 var els_wrapper = document.getElementsByClassName("winamaz-multiple-container");
 
 Array.from(els_wrapper).forEach(el => {
@@ -7,7 +8,7 @@ Array.from(els_wrapper).forEach(el => {
         product.style.paddingLeft  = "40px";
         product.innerHTML = 
             `<div 
-                style="display: flex; align-items: center; justify-content: center; height: 100%; width: 40px; position: absolute; top: 0px; left: 0px; background-color: #2DC87A;"
+                style="display: flex; align-items: center; justify-content: center; height: 100%; width: 40px; position: absolute; top: 0px; left: 0px; background-color: ${color};"
             >
                 <p style="color: white; margin-bottom: 0px;">
                     ${i+1}
